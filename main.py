@@ -7,6 +7,7 @@ from bs4 import BeautifulSoup
 
 GOOGLE_FINANCE_URL = 'https://www.google.com/finance/info?q='
 
+
 def get_stock_price(stock):
     """
     Gets stock price
@@ -19,5 +20,6 @@ def get_stock_price(stock):
     stock_object = stock_string[2:stock_string_length - 2]
     stock_json = json.loads(stock_object)
     print stock_json['l']
+
 
 get_stock_price('GOOG')
