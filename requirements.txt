@@ -1,0 +1,2 @@
+beautifulsoup4==4.7.1
+urllib5==5.0.0
