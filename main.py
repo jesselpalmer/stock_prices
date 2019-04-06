@@ -13,6 +13,5 @@ class Company:
     self.symbol = symbol.upper()
     self._company_raw_json_data = requests.get(self.YAHOO_FINANCE_URL_BASE + self.symbol).json()
 
-
 google = Company('GOOG')
 print(google._company_raw_json_data)
